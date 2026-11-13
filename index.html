@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ANATOX es un proyecto educativo interactivo para explorar anatomía, embriología, biología molecular y atención al paciente."
+    />
+    <meta name="theme-color" content="#143c3b" />
+    <meta property="og:title" content="ANATOX · Descifrando el cuerpo humano" />
+    <meta
+      property="og:description"
+      content="Una experiencia educativa para observar, relacionar y comprender el cuerpo humano."
+    />
+    <meta property="og:type" content="website" />
+    <title>ANATOX · Descifrando el cuerpo humano</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23143c3b'/%3E%3Cpath d='M32 15c-4-8-17-5-17 6 0 12 17 25 17 25s17-13 17-25c0-11-13-14-17-6Z' fill='%23f26b5e'/%3E%3Cpath d='M12 33h11l4-8 7 16 5-8h13' fill='none' stroke='%23fff9ef' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="ANATOX, ir al inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <path d="M24 13c-3.4-6.2-13-4.1-13 4.5C11 27 24 37 24 37s13-10 13-19.5C37 8.9 27.4 6.8 24 13Z" />
+              <path class="pulse" d="M7 25h9l3-6 5 12 4-6h13" />
+            </svg>
+          </span>
+          <span>
+            <strong>ANATOX</strong>
+            <small>Descifrando el cuerpo humano</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          <a href="#proyecto">El proyecto</a>
+          <a href="#areas">Áreas</a>
+          <a href="#atlas">Atlas visual</a>
+          <a href="#videoteca">Videoteca</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="hero section-shell">
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow"><span></span> Proyecto educativo interactivo</p>
+            <h1>El cuerpo humano,<br /><em>pieza por pieza.</em></h1>
+            <p class="hero-lead">
+              Anatomía, embriología y biología molecular reunidas en una experiencia visual que conecta
+              estructuras, desarrollo y función.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#areas">
+                Comenzar a explorar
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6" /></svg>
+              </a>
+              <a class="button button-ghost" href="#proyecto">Conocer el proyecto</a>
+            </div>
+            <dl class="hero-stats" aria-label="Resumen del contenido">
+              <div><dt>04</dt><dd>áreas de estudio</dd></div>
+              <div><dt>17</dt><dd>recursos educativos</dd></div>
+              <div><dt>01</dt><dd>cuerpo por descubrir</dd></div>
+            </dl>
+          </div>
+
+          <div class="hero-visual" data-reveal>
+            <div class="visual-caption visual-caption-top">
+              <span class="caption-dot"></span>
+              Aprender también es observar
+            </div>
+            <figure class="hero-card hero-card-main">
+              <img src="/images/el-corazon.jpeg" alt="Infografía anatómica del corazón" />
+            </figure>
+            <figure class="hero-card hero-card-small hero-card-neural">
+              <img
+                src="/images/embriologia-sistema-nervioso-central.jpeg"
+                alt="Esquema de la embriología del sistema nervioso central"
+              />
+            </figure>
+            <figure class="hero-card hero-card-small hero-card-care">
+              <img
+                src="/images/tecnicas-atencion-paciente.jpeg"
+                alt="Infografía de técnicas de atención al paciente"
+              />
+            </figure>
+            <div class="anatomy-tag anatomy-tag-heart"><span></span> Anatomía</div>
+            <div class="anatomy-tag anatomy-tag-cell"><span></span> Células</div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#proyecto" aria-label="Desplazarse a la siguiente sección">
+          <span>Explorar</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+        </a>
+      </section>
+
+      <section id="proyecto" class="project-section section-shell">
+        <div class="container">
+          <div class="section-intro split-intro" data-reveal>
+            <div>
+              <p class="eyebrow eyebrow-dark"><span></span> El proyecto</p>
+              <h2>Comprender lo que no siempre podemos ver.</h2>
+            </div>
+            <div class="intro-copy">
+              <p>
+                <strong>ANATOX: Descifrando el cuerpo humano</strong> facilita el aprendizaje mediante un
+                modelo anatómico tridimensional, accesible y de bajo costo, construido principalmente con
+                materiales reciclados.
+              </p>
+              <p>
+                Infografías y recursos audiovisuales complementan el modelo para convertir conceptos
+                complejos en conexiones claras, prácticas y memorables.
+              </p>
+            </div>
+          </div>
+
+          <div class="learning-grid">
+            <article class="learning-card learning-card-observe" data-reveal>
+              <span class="card-number">01</span>
+              <div class="learning-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M5 24s7-12 19-12 19 12 19 12-7 12-19 12S5 24 5 24Z" /><circle cx="24" cy="24" r="6" /></svg>
+              </div>
+              <h3>Observar</h3>
+              <p>Reconocer formas, posiciones y relaciones a través de representaciones visuales.</p>
+            </article>
+            <article class="learning-card learning-card-connect" data-reveal>
+              <span class="card-number">02</span>
+              <div class="learning-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><circle cx="12" cy="14" r="5" /><circle cx="36" cy="14" r="5" /><circle cx="24" cy="35" r="5" /><path d="m16 17 5 13m11-13-5 13M17 14h14" /></svg>
+              </div>
+              <h3>Relacionar</h3>
+              <p>Vincular la anatomía con el desarrollo embrionario y la función celular.</p>
+            </article>
+            <article class="learning-card learning-card-explain" data-reveal>
+              <span class="card-number">03</span>
+              <div class="learning-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M9 10h30v22H22l-9 7v-7H9V10Z" /><path d="M16 18h16M16 24h10" /></svg>
+              </div>
+              <h3>Explicar</h3>
+              <p>Transformar la exploración práctica en aprendizaje que puede comunicarse y aplicarse.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="areas" class="areas-section section-shell">
+        <div class="container">
+          <div class="section-intro centered-intro" data-reveal>
+            <p class="eyebrow eyebrow-light"><span></span> Áreas de estudio</p>
+            <h2>Cuatro rutas para descifrar el cuerpo.</h2>
+            <p>Explora cada tema como una capa distinta de un mismo sistema vivo.</p>
+          </div>
+
+          <div class="area-grid">
+            <article class="area-card area-card-anatomy" data-reveal>
+              <div class="area-card-head">
+                <span class="area-index">01</span>
+                <div class="area-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56"><path d="M28 45S9 33 9 18c0-10 13-13 19-4 6-9 19-6 19 4 0 15-19 27-19 27Z" /><path d="M4 29h13l4-9 7 18 6-10h18" /></svg>
+                </div>
+              </div>
+              <div>
+                <p class="area-kicker">Estructura</p>
+                <h3>Anatomía y sistemas</h3>
+                <p>Una mirada a la organización del corazón, los vasos, los sentidos y el sistema nervioso.</p>
+              </div>
+              <ul>
+                <li>Sistema cardiovascular</li>
+                <li>Sistema nervioso</li>
+                <li>Órganos de los sentidos</li>
+              </ul>
+              <a href="#atlas" data-filter-link="anatomia">Ver recursos <span>↗</span></a>
+            </article>
+
+            <article class="area-card area-card-embryology" data-reveal>
+              <div class="area-card-head">
+                <span class="area-index">02</span>
+                <div class="area-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56"><path d="M28 8c-9 0-16 7-16 16 0 13 10 23 22 23 7 0 12-5 12-12 0-8-6-14-14-14-5 0-9 4-9 9 0 4 3 7 7 7" /><circle cx="28" cy="16" r="3" /></svg>
+                </div>
+              </div>
+              <div>
+                <p class="area-kicker">Origen</p>
+                <h3>Embriología</h3>
+                <p>El desarrollo temprano como clave para comprender la formación de órganos y sistemas.</p>
+              </div>
+              <ul>
+                <li>Desarrollo cardiovascular</li>
+                <li>Desarrollo del sistema nervioso</li>
+                <li>Anomalías del desarrollo</li>
+              </ul>
+              <a href="#atlas" data-filter-link="embriologia">Ver recursos <span>↗</span></a>
+            </article>
+
+            <article class="area-card area-card-cell" data-reveal>
+              <div class="area-card-head">
+                <span class="area-index">03</span>
+                <div class="area-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56"><path d="M28 7c12 0 21 9 21 21s-9 21-21 21S7 40 7 28 16 7 28 7Z" /><circle cx="29" cy="27" r="8" /><circle cx="19" cy="18" r="2" /><circle cx="39" cy="37" r="3" /></svg>
+                </div>
+              </div>
+              <div>
+                <p class="area-kicker">Escala microscópica</p>
+                <h3>Biología celular y molecular</h3>
+                <p>Genes y células como fundamentos de la estructura, comunicación y diversidad biológica.</p>
+              </div>
+              <ul>
+                <li>Genes y expresión molecular</li>
+                <li>Células gliales</li>
+                <li>Relación estructura–función</li>
+              </ul>
+              <a href="#atlas" data-filter-link="celular">Ver recursos <span>↗</span></a>
+            </article>
+
+            <article class="area-card area-card-care" data-reveal>
+              <div class="area-card-head">
+                <span class="area-index">04</span>
+                <div class="area-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56"><path d="M20 7h16v13h13v16H36v13H20V36H7V20h13V7Z" /><path d="M13 29h9l4-7 6 14 4-7h7" /></svg>
+                </div>
+              </div>
+              <div>
+                <p class="area-kicker">Práctica clínica</p>
+                <h3>Atención al paciente</h3>
+                <p>Recursos introductorios sobre valoración, comunicación y procedimientos básicos.</p>
+              </div>
+              <ul>
+                <li>Signos vitales</li>
+                <li>Atención médico–paciente</li>
+                <li>Técnicas y primeros auxilios</li>
+              </ul>
+              <a href="#atlas" data-filter-link="atencion">Ver recursos <span>↗</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="atlas" class="atlas-section section-shell">
+        <div class="container">
+          <div class="section-intro atlas-intro" data-reveal>
+            <div>
+              <p class="eyebrow eyebrow-dark"><span></span> Atlas visual</p>
+              <h2>Detente. Observa. Relaciona.</h2>
+            </div>
+            <p>Cada lámina amplía una pieza del recorrido. Selecciona una categoría o abre la imagen para estudiarla con detalle.</p>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filtrar infografías" data-reveal>
+            <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="filter-button" type="button" data-filter="anatomia" aria-pressed="false">Anatomía</button>
+            <button class="filter-button" type="button" data-filter="embriologia" aria-pressed="false">Embriología</button>
+            <button class="filter-button" type="button" data-filter="celular" aria-pressed="false">Biología celular</button>
+            <button class="filter-button" type="button" data-filter="atencion" aria-pressed="false">Atención al paciente</button>
+          </div>
+
+          <div class="atlas-grid">
+            <button class="atlas-card atlas-card-tall" type="button" data-category="anatomia" data-image="/images/el-corazon.jpeg" data-title="El corazón" data-reveal>
+              <img src="/images/el-corazon.jpeg" alt="Infografía El corazón" loading="lazy" />
+              <span class="atlas-overlay"><span>Anatomía</span><strong>El corazón</strong><em>Ampliar ↗</em></span>
+            </button>
+            <button class="atlas-card atlas-card-wide" type="button" data-category="anatomia" data-image="/images/pulsos-del-brazo.jpeg" data-title="Los pulsos del brazo" data-reveal>
+              <img src="/images/pulsos-del-brazo.jpeg" alt="Infografía sobre los pulsos del brazo" loading="lazy" />
+              <span class="atlas-overlay"><span>Anatomía</span><strong>Los pulsos del brazo</strong><em>Ampliar ↗</em></span>
+            </button>
+            <button class="atlas-card atlas-card-wide" type="button" data-category="embriologia" data-image="/images/embriologia-sistema-nervioso-central.jpeg" data-title="Embriología del sistema nervioso central" data-reveal>
+              <img src="/images/embriologia-sistema-nervioso-central.jpeg" alt="Infografía de embriología del sistema nervioso central" loading="lazy" />
+              <span class="atlas-overlay"><span>Embriología</span><strong>Sistema nervioso central</strong><em>Ampliar ↗</em></span>
+            </button>
+            <button class="atlas-card atlas-card-tall" type="button" data-category="embriologia" data-image="/images/anomalias-sistema-nervioso.jpeg" data-title="Anomalías del sistema nervioso" data-reveal>
+              <img src="/images/anomalias-sistema-nervioso.jpeg" alt="Infografía de anomalías del sistema nervioso" loading="lazy" />
+              <span class="atlas-overlay"><span>Embriología</span><strong>Anomalías del sistema nervioso</strong><em>Ampliar ↗</em></span>
+            </button>
+            <button class="atlas-card atlas-card-wide" type="button" data-category="celular" data-image="/images/celulas-gliales.jpeg" data-title="Formación y función de las células gliales" data-reveal>
+              <img src="/images/celulas-gliales.jpeg" alt="Infografía de formación y función de las células gliales" loading="lazy" />
+              <span class="atlas-overlay"><span>Biología celular</span><strong>Células gliales</strong><em>Ampliar ↗</em></span>
+            </button>
+            <button class="atlas-card atlas-card-tall" type="button" data-category="anatomia" data-image="/images/sistema-cardiovascular-venoso.jpeg" data-title="Sistema cardiovascular y sistema venoso" data-reveal>
+              <img src="/images/sistema-cardiovascular-venoso.jpeg" alt="Infografía del sistema cardiovascular y venoso" loading="lazy" />
+              <span class="atlas-overlay"><span>Anatomía</span><strong>Sistema venoso</strong><em>Ampliar ↗</em></span>
+            </button>
+            <button class="atlas-card atlas-card-wide" type="button" data-category="atencion" data-image="/images/signos-vitales.jpeg" data-title="Signos vitales" data-reveal>
+              <img src="/images/signos-vitales.jpeg" alt="Infografía explicativa de signos vitales" loading="lazy" />
+              <span class="atlas-overlay"><span>Atención al paciente</span><strong>Signos vitales</strong><em>Ampliar ↗</em></span>
+            </button>
+            <button class="atlas-card atlas-card-wide" type="button" data-category="atencion" data-image="/images/tecnicas-atencion-paciente.jpeg" data-title="Técnicas de atención al paciente" data-reveal>
+              <img src="/images/tecnicas-atencion-paciente.jpeg" alt="Infografía de técnicas de atención al paciente" loading="lazy" />
+              <span class="atlas-overlay"><span>Atención al paciente</span><strong>Técnicas de atención</strong><em>Ampliar ↗</em></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="videoteca" class="video-section section-shell">
+        <div class="container">
+          <div class="video-heading" data-reveal>
+            <p class="eyebrow eyebrow-light"><span></span> Videoteca</p>
+            <h2>Ve el conocimiento en movimiento.</h2>
+            <p>Nueve cápsulas para continuar la exploración. Los videos se cargan únicamente cuando decides reproducirlos.</p>
+          </div>
+
+          <div class="video-groups">
+            <section class="video-group" aria-labelledby="video-fundamentos" data-reveal>
+              <div class="video-group-title">
+                <span>01</span>
+                <div><p>Fundamentos</p><h3 id="video-fundamentos">Sistemas, desarrollo y biología</h3></div>
+              </div>
+              <div class="video-grid">
+                <button class="video-card" type="button" data-video-id="RQ5LA0qYSPU" data-video-title="Sistema nervioso: explicación" data-video-format="landscape">
+                  <span class="video-poster"><img src="https://i.ytimg.com/vi/RQ5LA0qYSPU/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="play-button" aria-hidden="true">▶</span><span class="duration">3:14</span></span>
+                  <span class="video-meta"><span>Anatomía · Sistema nervioso</span><strong>Sistema nervioso: explicación</strong><em>Reproducir video <span>↗</span></em></span>
+                </button>
+                <button class="video-card" type="button" data-video-id="WahbGZi56U0" data-video-title="Órganos de los sentidos" data-video-format="landscape">
+                  <span class="video-poster"><img src="https://i.ytimg.com/vi/WahbGZi56U0/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="play-button" aria-hidden="true">▶</span><span class="duration">3:27</span></span>
+                  <span class="video-meta"><span>Anatomía · Sentidos</span><strong>Órganos de los sentidos</strong><em>Reproducir video <span>↗</span></em></span>
+                </button>
+                <button class="video-card" type="button" data-video-id="YfWfILZ1jIo" data-video-title="Embriología del sistema cardiovascular" data-video-format="portrait">
+                  <span class="video-poster"><img src="https://i.ytimg.com/vi/YfWfILZ1jIo/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="play-button" aria-hidden="true">▶</span><span class="duration">3:41</span></span>
+                  <span class="video-meta"><span>Embriología · Cardiovascular</span><strong>Embriología del sistema cardiovascular</strong><em>Reproducir video <span>↗</span></em></span>
+                </button>
+                <button class="video-card" type="button" data-video-id="55DtmwopTGo" data-video-title="Genes y biología molecular" data-video-format="portrait">
+                  <span class="video-poster"><img src="https://i.ytimg.com/vi/55DtmwopTGo/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="play-button" aria-hidden="true">▶</span><span class="duration">4:08</span></span>
+                  <span class="video-meta"><span>Biología molecular</span><strong>Genes y biología molecular</strong><em>Reproducir video <span>↗</span></em></span>
+                </button>
+              </div>
+            </section>
+
+            <section class="video-group" aria-labelledby="video-atencion" data-reveal>
+              <div class="video-group-title">
+                <span>02</span>
+                <div><p>Práctica clínica</p><h3 id="video-atencion">Atención al paciente</h3></div>
+              </div>
+              <div class="video-grid video-grid-compact">
+                <button class="video-card" type="button" data-video-id="op7lDXYafbQ" data-video-title="Atención médico–paciente" data-video-format="portrait">
+                  <span class="video-poster"><img src="https://i.ytimg.com/vi/op7lDXYafbQ/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="play-button" aria-hidden="true">▶</span><span class="duration">3:09</span></span>
+                  <span class="video-meta"><span>Comunicación clínica</span><strong>Atención médico–paciente</strong><em>Reproducir video <span>↗</span></em></span>
+                </button>
+                <button class="video-card" type="button" data-video-id="pwUnC6OhC0Y" data-video-title="Signos vitales" data-video-format="landscape">
+                  <span class="video-poster"><img src="https://i.ytimg.com/vi/pwUnC6OhC0Y/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" /><span class="play-button" aria-hidden="true">▶</span><span class="duration">4:26</span></span>
+                  <span class="video-meta"><span>Valoración del paciente</span><strong>Signos vitales</strong><em>Reproducir video <span>↗</span></em></span>
+                </button>
+              </div>
+            </section>
+
+            <section class="video-group video-group-procedures" aria-labelledby="video-procedimientos" data-reveal>
+              <div class="video-group-title">
+                <span>03</span>
+                <div><p>Primeros auxilios</p><h3 id="video-procedimientos">Técnicas y procedimientos</h3></div>
+              </div>
+              <div class="procedure-panel">
+                <div class="procedure-copy">
+                  <p class="procedure-label">Serie de tres videos</p>
+                  <h4>De la preparación a la técnica.</h4>
+                  <p>Una colección audiovisual dedicada a procedimientos básicos de atención al paciente.</p>
+                  <div class="procedure-note"><span aria-hidden="true">✦</span> Material de apoyo educativo</div>
+                </div>
+                <div class="procedure-list">
+                  <button class="procedure-item" type="button" data-video-id="34jhug47m6o" data-video-title="Administración de fármaco vía intramuscular" data-video-format="portrait">
+                    <span class="procedure-number">01</span>
+                    <span><small>Procedimiento · 2:13</small><strong>Administración de fármaco vía intramuscular</strong></span>
+                    <span class="procedure-play" aria-hidden="true">▶</span>
+                  </button>
+                  <button class="procedure-item" type="button" data-video-id="zSoB13iCKMw" data-video-title="Canalización" data-video-format="portrait">
+                    <span class="procedure-number">02</span>
+                    <span><small>Procedimiento · 1:55</small><strong>Canalización</strong></span>
+                    <span class="procedure-play" aria-hidden="true">▶</span>
+                  </button>
+                  <button class="procedure-item" type="button" data-video-id="jOoOh3mIwpo" data-video-title="Inyección subcutánea" data-video-format="landscape">
+                    <span class="procedure-number">03</span>
+                    <span><small>Procedimiento · 1:17</small><strong>Inyección subcutánea</strong></span>
+                    <span class="procedure-play" aria-hidden="true">▶</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section section-shell">
+        <div class="container closing-grid" data-reveal>
+          <div class="closing-visual" aria-hidden="true">
+            <svg viewBox="0 0 420 420">
+              <circle cx="210" cy="210" r="178" />
+              <circle cx="210" cy="210" r="129" />
+              <path d="M210 43v334M43 210h334" />
+              <path class="body-line" d="M210 91c-22 0-38 18-38 40 0 19 12 34 29 39l-9 20-22 34-7 91m47-145v155m9-155 9 20 22 34 7 91m-47-94-42 18m51-18 42 18" />
+              <path class="heart-line" d="M210 190c-7-14-29-8-29 9 0 20 29 40 29 40s29-20 29-40c0-17-22-23-29-9Z" />
+            </svg>
+          </div>
+          <div class="closing-copy">
+            <p class="eyebrow eyebrow-dark"><span></span> Una visión integrada</p>
+            <h2>El cuerpo no se aprende por partes aisladas.</h2>
+            <p>
+              ANATOX propone mirar cada estructura como parte de una historia mayor: cómo se forma, cómo funciona
+              y cómo se relaciona con el cuidado de las personas.
+            </p>
+            <a class="button button-primary" href="#inicio">Volver al inicio <span>↑</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="#inicio">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 13c-3.4-6.2-13-4.1-13 4.5C11 27 24 37 24 37s13-10 13-19.5C37 8.9 27.4 6.8 24 13Z" /><path class="pulse" d="M7 25h9l3-6 5 12 4-6h13" /></svg>
+            </span>
+            <span><strong>ANATOX</strong><small>Descifrando el cuerpo humano</small></span>
+          </a>
+          <p>Una experiencia educativa para observar, relacionar y comprender.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <p>Explorar</p>
+          <a href="#proyecto">El proyecto</a>
+          <a href="#areas">Áreas de estudio</a>
+          <a href="#atlas">Atlas visual</a>
+          <a href="#videoteca">Videoteca</a>
+        </nav>
+        <div class="footer-note">
+          <p>Nota educativa</p>
+          <span>Este material tiene fines académicos y no sustituye la orientación de profesionales de la salud.</span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> ANATOX</span>
+        <span>Anatomía · Embriología · Biología molecular</span>
+      </div>
+    </footer>
+
+    <dialog class="media-dialog image-dialog" aria-labelledby="image-dialog-title">
+      <button class="dialog-close" type="button" aria-label="Cerrar visor">×</button>
+      <div class="image-dialog-content">
+        <p class="dialog-eyebrow">Atlas visual</p>
+        <h2 id="image-dialog-title"></h2>
+        <img src="" alt="" />
+      </div>
+    </dialog>
+
+    <dialog class="media-dialog video-dialog" aria-labelledby="video-dialog-title">
+      <button class="dialog-close" type="button" aria-label="Cerrar video">×</button>
+      <div class="video-dialog-content">
+        <p class="dialog-eyebrow">Videoteca ANATOX</p>
+        <h2 id="video-dialog-title"></h2>
+        <div class="video-frame" data-video-frame></div>
+        <p class="video-disclaimer">Contenido educativo alojado en YouTube. Activa los subtítulos desde el reproductor cuando estén disponibles.</p>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
